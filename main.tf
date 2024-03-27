@@ -201,7 +201,7 @@ resource "null_resource" "configure-cat-app" {
     }
   }
 }
-module "backupstorage" {
+module "azure-backup" {
   source = "app.terraform.io/TERRAFORM_LAB_SD/azure-backup/azurerm"
   version = "1.0.2"
   resource_group_name = "${var.prefix}-private"
